@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre mi</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c5b58270d5.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+        background: #fff;
+    }
+    .home {
+      padding: 10px;
+      display: flex;
+      gap: 8rem;
+    }
+    .home-contenido {
+      text-align: center;
+      justify-content: center;
+    }
+    .home-contenido h1{
+        font-size: 4.2rem;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+    span {
+    color: var(--principal-color);
+    }
+    .home-img img {
+        position: relative;
+        width: 450px;
+        height: 550px;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    .home-img img:hover {
+        transform: scale(1.01);
+    }
+    .home-contenido p {
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: 2.4;
+    }   
+    .social-icon a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 3.5rem;
+        height: 3.5rem;
+        background: transparent;
+        border: 0.2rem solid #000;
+        font-size: 1.8rem;
+        border-radius: 50%;
+        color: #000;
+        margin: 3rem 1.5rem 3rem;
+        transition: 0.3s ease;
+    }
+    .social-icon a:hover {
+        color: white;
+        border: transparent;
+        transform: scale(1.3)translateY(-5px);
+        background: var(--principal-color);
+        box-shadow: 0 0 25px var(--principal-color);
+    }
+    .tipico-texto {
+        font-size: 34px;
+        margin-bottom: 1rem;
+        font-weight: 700;
+        min-width: 280px;
+    }
+    .tipico-texto span {
+        position: relative;
+    }
+    .tipico-texto span::before {
+        content: 'Estudiante Sena';
+        color: var(--principal-color);
+        animation: words 20s infinite;
+    }
+    .tipico-texto span::after {
+        content: '';
+        background: #fff;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-left: 3px solid var(--bg-color);
+        right: -8px;
+        animation: cursor 0.6s infinite, tipico 20s steps(14) infinite;
+    }
+    @keyframes cursor {
+        to {
+            border-left: 3px solid var(--bg-color); 
+        }
+    }
+    @keyframes words {
+        0%, 20% {
+            content: 'Estudiante Sena';
+        }
+        21%, 40% {
+            content: 'Heroico Free Fire';
+        }
+        41%, 60% {
+            content: 'Racista';
+        }
+        61%, 80% {
+            content: 'Facista';
+        }
+        81%, 100% {
+            content: 'A1 ingles :D';
+        }
+    }
+    @keyframes tipico {
+        10%, 15%,
+        30%, 35%,
+        50%, 55%,
+        70%, 75%,
+        90%, 95% {
+            width: 0;
+        }
+        5%, 20%,
+        25%, 40%,
+        45%, 60%,
+        65%, 80%, 85%{
+            width: calc(100% + 8px);
+        }
+    }
+  </style>
+</head>
+<body>
+
+    <header class="cabeza">
+
+        <nav class="navbar">
+    
+          <h1 class="titulo">Cine Medallo</h1>
+          <ul class="menu-horizontal">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="#" class="active">Sobre mi</a></li>
+            <li>
+              <a href="peliculas.html">Películas</a>
+            </li>
+            <li><a href="series.html">Series</a></li>
+          </ul>
+          
+        </nav>
+    
+      </header>
+
+  <section class="home" id="home">
+    <div class="home-img">
+        <img src="../imagenes/puck.gif">
+    </div>
+    <div class="home-contenido">
+        <h1>Hola, soy <span>Joan</span></h1>
+        <br>
+        <h3 class="tipico-texto">Yo soy <span></span></h3>
+        <p>
+          Feel no shame about shape 
+          Weather changes their phrase
+          Even mother will show you another way
+          So put your glasses on 
+          Nothing will be wrong 
+          There's no blame, there's no fame 
+          It's up to you 
+          The first words should be found 
+          Whatever hold you back 
+          I can, I can get it off
+        </p>
+
+        <div class="social-icon">
+            <a href="https://www.facebook.com/joan.peralta0419" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/joanperalta0419/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <a href="#" class="btn">Saber más</a>
+    </div>
+  </section>
+  
+</body>
+</html>

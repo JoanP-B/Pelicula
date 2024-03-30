@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peliculas</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c5b58270d5.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --principal-color: rgb(66, 89, 219);
+      --texto-color: #000;
+    }
+    body {
+      font-family: montserrat;
+    }
+    .cabeza-contenido {
+      height: 90vh;
+      background-image: url('imagenes/blue-beetle.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    .cabeza-1 img {
+      position: absolute;
+      left: 930px;
+      top: 370px;
+      width: 400px;
+      height: 120px;
+    }
+    .cabeza-1 .btn{
+      position: absolute;
+      left: 1050px;
+      top: 520px;
+    }
+  </style>
+
+</head>
+<body>
+  <header class="cabeza">
+
+    <nav class="navbar">
+
+      <h1 class="titulo">Cine Medallo</h1>
+      <ul class="menu-horizontal">
+        <li><a href="#" class="active">Inicio</a></li>
+        <li><a href="js/yo.html">Sobre mi</a></li>
+        <li>
+          <a href="js/peliculas.html">Películas</a>
+        </li>
+        <li><a href="js/series.html">Series</a></li>
+      </ul>
+      
+      <a href="js/inicio_s.html" class="btn" target="_blank">Inicia Sesión</a> 
+    </nav>
+
+
+    <div class="cabeza-contenido">
+      <div class="cabeza-1">
+        <img src="imagenes/logos/Blue_Beetle_logo.png">
+        <a href="imagenes/logos/trailers/blue-beetle.mp4" class="btn" target="_blank">Ver ahora</a>
+      </div>
+    </div>
+  </header>
+
+  <script src="js/fondo.js"></script>
+
+</body>
+</html>
