@@ -26,7 +26,6 @@ body {
   z-index: 100;
 }
 .navbar {
-  background-color: #000;
   display: flex;
   width: 100%;
   padding: 10px 2rem;
@@ -51,7 +50,7 @@ body {
   font-size: 17px;
   color: white;
   margin-left: 4rem;
-  font-weight: 400;
+  font-weight: 500;
   border-bottom: 3px solid transparent;
 }
 .navbar ul a:hover, 
@@ -82,7 +81,7 @@ body {
   background-color: var(--principal-color);
   border-radius: 4rem;
   font-size: 1rem;
-  color:  var(--texto-color);
+  color:  #000;
   border: 2px solid var(--principal-color);
   letter-spacing: 0.1rem;
   font-weight: 600;
