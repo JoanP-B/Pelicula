@@ -12,11 +12,13 @@
 }
 :root {
   --principal-color: rgb(240, 60, 60);
-  --bg-color : #000;
   --texto-color: #fff;
 }
 body {
-  background: linear-gradient(150deg, #000000, #141111);
+  background-image:  url('../imagenes/fondo.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .cabeza {
   top: 0;
